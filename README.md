@@ -141,23 +141,43 @@ plt.subplot(122); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Hist
 ### Grayscale Histogram Equalization
 
 - Original grayscale image is displayed
+
+
   <img width="552" height="396" alt="download" src="https://github.com/user-attachments/assets/ac95e1a7-f9ae-4e84-a4d6-ae0c0451b72d" />
   
  
 - Histogram of original grayscale image is plotted
 
+  <img width="578" height="435" alt="download" src="https://github.com/user-attachments/assets/c5a090f0-0be7-4226-be11-d2a290a3296b" />
 
+- Enhanced image after histogram equalization is displayed
 
+  <img width="578" height="435" alt="download" src="https://github.com/user-attachments/assets/757d86e5-0bba-4bc2-b781-b7773889b4f7" />
 
-- Enhanced image after histogram equalization is displayed  
 - Histogram of enhanced grayscale image shows improved contrast  
+
+ <img width="552" height="396" alt="download" src="https://github.com/user-attachments/assets/7f79813b-af71-44f9-a6e3-b0070a4e7b97" />
+
 
 ### Color Image Histogram Equalization
 
-- Original color image is displayed  
-- Histogram of B, G, R channels is plotted  
-- Enhanced image after HSV-based equalization is displayed  
-- Histogram of enhanced image shows better intensity distribution  
+- Original color image is displayed
+
+ <img width="552" height="396" alt="download" src="https://github.com/user-attachments/assets/71a95ba2-e214-420a-92bf-7f55f61e40c9" />
+ 
+- Histogram of B, G, R channels is plotted
+
+  <img width="578" height="435" alt="download" src="https://github.com/user-attachments/assets/437aac62-5290-4463-bceb-0fc3bd85ebc3" />
+
+
+- Enhanced image after HSV-based equalization is displayed
+
+  <img width="1426" height="416" alt="download" src="https://github.com/user-attachments/assets/15a65c94-c25e-45ec-9a7f-3a389a5e488a" />
+
+- Histogram of enhanced image shows better intensity distribution
+
+  <img width="1244" height="374" alt="download" src="https://github.com/user-attachments/assets/6492b993-00b3-4b74-b334-5bfb9044f474" />
+
 
 ---
 
