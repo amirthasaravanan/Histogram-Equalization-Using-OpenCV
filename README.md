@@ -67,22 +67,88 @@ Display original color image, histogram, enhanced image, and enhanced histogram 
 
 ---
 
-## Program
+
 
 ### Developed By:
-**Name:** ____________________________  
+**Name:** AMIRTHA VARSHINI M
 
-### Register No:
-____________________________  
+**Register Number:** 212224230017
 
+## Program
+```python
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+```
+```python
+img = cv2.imread('parrot.jpg', cv2.IMREAD_GRAYSCALE)
+```
+```python
+plt.imshow(img, cmap='gray')
+plt.title('Original Image')
+plt.show()
+```
+```python
+plt.hist(img.ravel(),256,range = [0, 256]);
+plt.title('Original Image')
+plt.show()
+```
+```python
+img_eq = cv2.equalizeHist(img)
+```
+```python
+plt.hist(img_eq.ravel(), 256, range = [0, 256])
+plt.title('Equalized Histogram')
+```
+```python
+plt.imshow(img_eq, cmap='gray')
+plt.title('Original Image')
+plt.show()
+```
+```python
+img = cv2.imread('parrot.jpg', cv2.IMREAD_COLOR)
+```
+```python
+img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+```
+```python
+img_hsv[:,:,2] = cv2.equalizeHist(img_hsv[:, :, 2])
+```
+```python
+img_eq = cv2.cvtColor(img_hsv, cv2.COLOR_HSV2BGR)
+```
+```python
+plt.imshow(img_eq[:,:,::-1]); plt.title('Equalized Image');plt.show()
+```
+```python
+plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Histogram Equalized');plt.ashow()
+```
+```python
+plt.figure(figsize = (20,10))
+plt.subplot(221); plt.imshow(img[:, :, ::-1]); plt.title('Original Color Image')
+plt.subplot(222); plt.imshow(img_eq[:, :, ::-1]); plt.title('Equalized Image')
+plt.show()
+```
+```python
+plt.figure(figsize = [15,4])
+plt.subplot(121); plt.hist(img.ravel(),256,range = [0, 256]); plt.title('Original Image')
+plt.subplot(122); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Histogram Equalized')
+```
 ---
 
 ##  Output
 
 ### Grayscale Histogram Equalization
 
-- Original grayscale image is displayed  
-- Histogram of original grayscale image is plotted  
+- Original grayscale image is displayed
+  <img width="552" height="396" alt="download" src="https://github.com/user-attachments/assets/ac95e1a7-f9ae-4e84-a4d6-ae0c0451b72d" />
+  
+ 
+- Histogram of original grayscale image is plotted
+
+
+
+
 - Enhanced image after histogram equalization is displayed  
 - Histogram of enhanced grayscale image shows improved contrast  
 
