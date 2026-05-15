@@ -156,14 +156,14 @@ plt.subplot(122); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Hist
 
 - Histogram of enhanced grayscale image shows improved contrast  
 
- <img width="552" height="396" alt="download" src="https://github.com/user-attachments/assets/7f79813b-af71-44f9-a6e3-b0070a4e7b97" />
+  <img width="552" height="396" alt="download" src="https://github.com/user-attachments/assets/7f79813b-af71-44f9-a6e3-b0070a4e7b97" />
 
 
 ### Color Image Histogram Equalization
 
 - Original color image is displayed
 
- <img width="552" height="396" alt="download" src="https://github.com/user-attachments/assets/71a95ba2-e214-420a-92bf-7f55f61e40c9" />
+  <img width="552" height="396" alt="download" src="https://github.com/user-attachments/assets/71a95ba2-e214-420a-92bf-7f55f61e40c9" />
  
 - Histogram of B, G, R channels is plotted
 
